@@ -48,6 +48,10 @@ namespace Nationalist
                 countries.Remove(congoDRC);
                 var congoRepublic = countries.SingleOrDefault(c => c.Code == "CG" && c.AlternateForm.IsNullOrWhiteSpace());
                 countries.Remove(congoRepublic);
+                var ivoryCoast = countries.SingleOrDefault(c => c.Code == "CI" && c.AlternateForm == "variant");
+                countries.Remove(ivoryCoast);
+                var czechia = countries.SingleOrDefault(c => c.Code == "CZ" && c.AlternateForm.IsNullOrWhiteSpace());
+                countries.Remove(czechia);
                 var falkland = countries.SingleOrDefault(c => c.Code == "FK" && c.AlternateForm == "variant");
                 countries.Remove(falkland);
                 var uk = countries.SingleOrDefault(c => c.Code == "GB" && c.AlternateForm == "short");
@@ -60,6 +64,8 @@ namespace Nationalist
                 countries.Remove(macau);
                 var palestine = countries.SingleOrDefault(c => c.Code == "PS" && c.AlternateForm == "short");
                 countries.Remove(palestine);
+                var timor = countries.SingleOrDefault(c => c.Code == "TL" && c.AlternateForm == "variant");
+                countries.Remove(timor);
                 var us = countries.SingleOrDefault(c => c.Code == "US" && c.AlternateForm == "short");
                 countries.Remove(us);
             }
