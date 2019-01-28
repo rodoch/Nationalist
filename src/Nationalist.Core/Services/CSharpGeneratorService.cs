@@ -41,7 +41,7 @@ namespace Nationalist.Core
                             TypeArgumentList(
                                 SeparatedList<TypeSyntax>(new SyntaxNodeOrToken[]
                                     { 
-                                        PredefinedType(Token(SyntaxKind.IntKeyword)),
+                                        PredefinedType(Token(SyntaxKind.StringKeyword)),
                                         Token(SyntaxKind.CommaToken),
                                         PredefinedType(Token(SyntaxKind.StringKeyword))
                                     }
@@ -71,7 +71,7 @@ namespace Nationalist.Core
                                     TypeArgumentList(
                                         SeparatedList<TypeSyntax>(new SyntaxNodeOrToken[]
                                             { 
-                                                PredefinedType(Token(SyntaxKind.IntKeyword)),
+                                                PredefinedType(Token(SyntaxKind.StringKeyword)),
                                                 Token(SyntaxKind.CommaToken),
                                                 PredefinedType(Token(SyntaxKind.StringKeyword))
                                             }

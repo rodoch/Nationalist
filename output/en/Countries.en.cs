@@ -5,7 +5,7 @@ namespace Nationalist.en
 {
     public static class Countries
     {
-        public static Dictionary<int, string> Cldr { get; set; } = new Dictionary<int, string>
+        public static Dictionary<string, string> Cldr { get; set; } = new Dictionary<string, string>
         {
             { "AD", "Andorra" },
             { "AE", "United Arab Emirates" },
