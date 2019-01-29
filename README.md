@@ -1,6 +1,6 @@
 # Nationalist
 
-***A chairde Gael: muna spéis leat ach liosta cuimsitheach tíortha i nGaeilge agus/nó i mBéarla a fháil i bhformáidí éagsúla (cuid acu atá meaisín-inléite), moltar cuairt a thabhairt ar an fhillteán `output` thuas***
+***A chairde Gael: muna spéis leat ach liosta cuimsitheach tíortha i nGaeilge agus/nó i mBéarla a fháil i bhformáidí éagsúla (cuid acu atá meaisín-inléite) moltar cuairt a thabhairt ar an fhillteán `output` thuas***
 
 ## Background
 
