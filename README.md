@@ -24,4 +24,4 @@ Customise the list-curation process by adding your own code to the `ModifyList()
 
 ## How it works
 
-**Nationalist** takes the CLDR as the authoritative source for country names. Noise is filtered from the CLDR territories list by comparing it with the countries data held by GeoNames and reducing the list to a subset of territories common to both data stores. The resulting list may then, optionally, be processed by the Modifier class to produce the curated list. The final list is then piped to several generator services to create the final output.
+**Nationalist** takes the CLDR as the authoritative source for country names. Noise is filtered from the CLDR territories list by comparing it with the countries data held by GeoNames and reducing the list to a subset of territories common to both data stores. The resulting list may then, optionally, be processed by the Modifier class to produce the curated list. The curated list is then piped to several generator services to create the final output.
