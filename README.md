@@ -20,7 +20,7 @@ On the surface, the idea of programmatically generating a list of all the countr
 - JSON
 - TSV
 
-Customise the list-curation process by adding your own code to the `ModifyList()` method of the **Modifier** class.
+Customise the list curation process by adding your own code to the `ModifyList()` method of the **Modifier** class.
 
 ## Configuration
 
