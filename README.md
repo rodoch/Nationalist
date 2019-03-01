@@ -22,6 +22,10 @@ On the surface, the idea of programmatically generating a list of all the countr
 
 Customise the list-curation process by adding your own code to the `ModifyList()` method of the **Modifier** class.
 
+## Configuration
+
+**Nationalist** is an ASP.NET Core 2.1 console application. To get up and running you just need to update your configuration in the **appsettings.json** file. Specify a *Data* folder, where data downloaded via the GeoNames API will be stored, and *Output* path where the resulting files will be created.
+
 ## How it works
 
 **Nationalist** takes the CLDR as the authoritative source for country names. Noise is filtered from the CLDR territories list by comparing it with the countries data held by GeoNames and reducing the list to a subset of territories common to both data stores. The resulting list may then, optionally, be processed by the Modifier class to produce the curated list. The curated list is then piped to several generator services to create the final output.
