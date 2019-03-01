@@ -24,7 +24,7 @@ Customise the list-curation process by adding your own code to the `ModifyList()
 
 ## Configuration
 
-**Nationalist** is an ASP.NET Core 2.1 console application. To get up and running you just need to update your configuration in the **appsettings.json** file. Specify a *Data* folder, where data downloaded via the GeoNames API will be stored, and *Output* path where the resulting files will be created.
+**Nationalist** is an ASP.NET Core 2.1 console application. To get up and running you just need to update your configuration in the **appsettings.json** file. Specify a *Data* folder, where data downloaded via the GeoNames API will be stored, and *Output* path where the resulting files will be created. Then just run the app and follow the instructions in the UI.
 
 ## How it works
 
