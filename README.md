@@ -4,7 +4,7 @@
 
 ## Background
 
-On the surface, the idea of programmatically generating a list of all the countries in the world seems like it should be a simple task and, generally speaking, computer programmers will draw on the authoritative data provided by the Unicode [Common Locale Data Repository](http://cldr.unicode.org/) (CLDR) to accomplish this. Furthermore, the well-known [GeoNames](http://www.geonames.org/) geographical database has a useful `CountryInfo` table. Despite this, I've repeatedly encountered a number of issues:
+On the surface, the idea of programmatically generating a list of all the countries in the world seems like it should be a simple task and, generally speaking, programmers will draw on the authoritative data provided by the Unicode [Common Locale Data Repository](http://cldr.unicode.org/) (CLDR) to accomplish this. Furthermore, the well-known [GeoNames](http://www.geonames.org/) geographical database has a useful `CountryInfo` table. Despite this, I've repeatedly encountered a number of issues:
 
 - If all we want is a list of countries, then the CLDR data contain a lot of noise. There is no concept of countries within the CLDR, only territories and subdivisions. The territories data contains not only countries but continents, oceans and entities like the United Nations.
 - Similarly, while GeoNames does define its own country list with authoritiative English-language names there are often multiple localised forms of these names, sometimes making it difficult to find authoritative country names in various languages or to understand the relationships between the alternate forms.
