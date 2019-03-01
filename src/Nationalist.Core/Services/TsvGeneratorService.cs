@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using CsvHelper;
+using Microsoft.Extensions.Options;
 
 namespace Nationalist.Core
 {
@@ -9,9 +10,9 @@ namespace Nationalist.Core
     {
         private readonly string _outputPath;
 
-        public TsvGeneratorService(NationalistSettings settings)
+        public TsvGeneratorService(IOptionsMonitor<NationalistSettings> settings)
         {
-            _outputPath = settings.OutputPath;
+            _outputPath = settings.CurrentValue.OutputPath;
         }
 
         public void WriteTsv(List<Country> countries, string locale)

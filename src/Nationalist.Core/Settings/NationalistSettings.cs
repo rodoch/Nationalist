@@ -2,8 +2,8 @@ namespace Nationalist.Core
 {
     public class NationalistSettings
     {
-        public string DataPath { get; set; } = "./Data";
+        public string DataPath { get; set; }
 
-        public string OutputPath { get; set; } = "../../output/";
+        public string OutputPath { get; set; }
     }
 }

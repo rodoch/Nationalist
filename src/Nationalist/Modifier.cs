@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Ansa.Extensions;
 using Nationalist.Core;
 
@@ -85,6 +86,15 @@ namespace Nationalist
                 countries.Add(new Country("GB-NIR", 2641364, "Tuaisceart Éireann"));
                 countries.Add(new Country("GB-SCT", 2638360, "Albain"));
                 countries.Add(new Country("GB-WLS", 2634895, "an Bhreatain Bheag"));
+            }
+
+            // Standardize GA capitalization
+            if (locale == "ga")
+            {
+                foreach (var country in countries)
+                {
+                    country.Name = Regex.Replace(country.Name, "^an", "An");
+                }
             }
 
             return countries;

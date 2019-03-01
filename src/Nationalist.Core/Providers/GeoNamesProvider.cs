@@ -2,22 +2,21 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Ansa.Extensions;
+using Microsoft.Extensions.Options;
 using NGeoNames;
-using NGeoNames.Entities;
 
 namespace Nationalist.Core
 {
     public class GeoNamesProvider : IGeoNamesProvider
     {
-        private string _fileName;
-        private string _dataPath;
-        private string _countryInfoPath;
+        private readonly string _fileName;
+        private readonly string _dataPath;
+        private readonly string _countryInfoPath;
 
-        public GeoNamesProvider(NationalistSettings settings)
+        public GeoNamesProvider(IOptionsMonitor<NationalistSettings> settings)
         {
             _fileName = "countryInfo.txt";
-            _dataPath = settings.DataPath;
+            _dataPath = settings.CurrentValue.DataPath;
             _countryInfoPath = Path.Combine(_dataPath, _fileName);
         }
 

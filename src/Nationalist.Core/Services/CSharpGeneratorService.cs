@@ -6,6 +6,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Formatting;
+using Microsoft.Extensions.Options;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
 
 namespace Nationalist.Core
@@ -14,9 +15,9 @@ namespace Nationalist.Core
     {
         private readonly string _outputPath;
 
-        public CSharpGeneratorService(NationalistSettings settings)
+        public CSharpGeneratorService(IOptionsMonitor<NationalistSettings> settings)
         {
-            _outputPath = settings.OutputPath;
+            _outputPath = settings.CurrentValue.OutputPath;
         }
 
         public void WriteCSharp(List<Country> countries, string locale)

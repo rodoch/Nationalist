@@ -32,9 +32,7 @@ namespace Nationalist.Core
 
                     // only countries have alphabetical type codes; other territories are represented numerically
                     if (type.IsNullOrWhiteSpace() || int.TryParse(type, out int number))
-                    {
                         continue;
-                    }
 
                     var name = territories.Current.Value;
                     var alternate = territories.Current.GetAttribute("alt", string.Empty);

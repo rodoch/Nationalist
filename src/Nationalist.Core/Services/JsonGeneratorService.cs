@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -10,9 +11,9 @@ namespace Nationalist.Core
     {
         private readonly string _outputPath;
 
-        public JsonGeneratorService(NationalistSettings settings)
+        public JsonGeneratorService(IOptionsMonitor<NationalistSettings> settings)
         {
-            _outputPath = settings.OutputPath;
+            _outputPath = settings.CurrentValue.OutputPath;
         }
 
         public void WriteJson(List<Country> countries, string locale)
